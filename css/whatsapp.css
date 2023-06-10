@@ -1,0 +1,247 @@
+html,body 
+{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #001412;
+}
+
+.header
+{
+    width:100%;
+    padding:1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    background-color: #075e54;
+    color:#dcf8c6;
+}
+
+.header > .title 
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.header > .action-icons
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.action-icons > .icon 
+{
+    margin:0 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-icons > .icon > img 
+{
+    width:1.5rem;
+
+}
+
+
+.secondary-menu 
+{
+    background-color: #075e54;
+    color:#dcf8c6;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    margin-top: -1px;
+}
+
+.secondary-menu > .group-icon-holder
+{
+    flex-shrink: 1;
+    flex-grow: 0;
+
+    /* border-bottom: 4px solid #25d366; */
+}
+
+.group-icon-holder > .icon 
+{
+    padding:0 .5rem;
+}
+
+.group-icon-holder > .icon > svg 
+{
+    width:24px;
+    height:30px;
+    fill: #dcf8c6;
+}
+
+.secondary-menu > .page-menu-holder
+{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.page-menu-holder > .page 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   align-items: center;
+   padding:.5rem 0;
+   flex-grow: 1;
+}
+
+.page-menu-holder > .page.active 
+{
+   border-bottom: 4px solid #25d366;
+   color: #25d366;
+}
+
+
+
+.page > span.title
+{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    
+    font-weight: 500;
+}
+
+.page > span.bubble
+{
+    font-size: .75rem;
+    width:.85rem;
+    text-align: center;
+    height:.85rem;
+    margin-left: .25rem;
+    color:#001412;
+    padding:2px;
+    border-radius: 50%;
+    background-color: #dcf8c6;
+}
+
+.page.active > .bubble
+{   
+    background-color: #25d366;
+}
+
+.page > .bubble.small 
+{
+    width:.15rem;
+    height:.15rem;
+}
+
+.flexrow 
+{
+    display: flex;
+    flex-direction: row;
+}
+.messages-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.message-container
+{
+    display: flex;
+    flex-direction: row;    
+}
+
+.avatar-holder
+{
+    padding:1rem;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.avatar-holder > .avatar 
+{
+    width:3rem;
+    height:3rem;
+    border:1px solid yellow;
+    border-radius: 50%;
+
+    background-image: url('../img/user-avatar.png');
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+.message-info-holder
+{
+    display: flex;
+    flex-direction: row;
+    padding:1rem 0;
+    color:white;
+    flex-grow: 1;
+}
+
+.message-info-holder > .msg-info 
+{
+    flex-grow: 1;
+}
+
+.msg-info > .name 
+{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.msg-info > .last-msg 
+{
+    font-size: .875rem;
+    color:#a7bbb9;
+    padding:.25rem 0;
+
+}
+
+.extra-info-holder 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-grow: 0;
+    padding: 0 1rem 0 .5rem;
+}
+
+.extra-info-holder.active  > .time
+{
+    color:#25d366;
+
+}
+
+.extra-info-holder.active  > .bubble
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#001412;
+    background-color: #25d366;
+    font-size: .875rem;
+    width:1rem;
+    height:1rem;
+    border-radius: 50%;
+    margin:.5rem 0;
+}
+
+.extra-info-holder > .time 
+{
+    font-size: .875rem;
+}
+
+.extra-info-holder > .bubble 
+{
+    display: none;
+    font-size: .875rem;
+   
+}
