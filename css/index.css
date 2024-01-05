@@ -1,0 +1,522 @@
+@media screen and (max-width: 776px) {
+    html,body
+    {
+        margin: 0;
+        padding:0;
+        font-family: "Roboto", sans-serif;
+    }
+    .whats-app-main
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        background-color: #075e54;
+    }
+    .whats-app-main > .whats-app-container
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .whats-app-container > .header
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .header > .top-nav
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding-top: .5rem;
+    }
+    .top-nav > .title-container
+    {
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: flex-start;
+    }
+    .title-container > .title
+    {
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        margin-left: 1rem;
+    }
+    .title > h3
+    {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #fff;
+    }
+    .top-nav > .action-icon-container
+    {
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+    }
+    .action-icon-container > .action-icons 
+    {
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: space-between;
+        margin-right: .5rem;
+    }
+    .action-icons > .icon
+    {
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        padding: .25rem;
+        cursor: pointer;
+    }
+    .icon > img
+    {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .header > .tabs-container
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        box-sizing: border-box;
+        /* padding: .5rem 0; */
+        width: 100%;
+    }
+    .tabs-container > .group-icon-holder
+    {
+        flex-shrink: 1;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        width: 100%;
+        /* border-bottom: 4px solid #25d366; */
+    }
+    
+    .group-icon-holder > .icon 
+    {
+        padding:0 .5rem;
+    }
+    
+    .group-icon-holder > .icon > svg 
+    {
+        width:24px;
+        height:30px;
+        fill: #dcf8c6;
+    }
+    
+    .group-icon-holder > .page-menu-holder
+    {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .page-menu-holder > .page 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       align-items: center;
+       padding:.5rem 0;
+       /* flex-grow: 1; */
+    }
+    
+    .page-menu-holder > .page-active 
+    {
+       border-bottom: 4px solid #25d366;
+       color: #25d366;
+       max-width: 20%;
+       display: flex;
+       flex-direction: row;
+       box-sizing: border-box;
+    }
+    
+    
+    
+    .page-active > span.title
+    {
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+    
+    
+    .page-active > a,a:visited, a:hover
+    {
+        color: #25d366;
+        text-decoration: none;
+    }
+    
+    .page > a,a:visited, a:hover
+    {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .page-active > span.bubble
+    {
+        font-size: .75rem;
+        width:.85rem;
+        text-align: center;
+        height:.85rem;
+        margin-left: .25rem;
+        color:#001412;
+        padding:2px;
+        border-radius: 50%;
+        background-color: #dcf8c6;
+    }
+    
+    .page-active > .bubble
+    {   
+        background-color: #25d366;
+    }
+    
+    .page-active > .bubble.small 
+    {
+        width:.15rem;
+        height:.15rem;
+    }
+    .whats-app-main > .tabs-content
+    {
+        display: flex;
+        flex-direction: column;    
+        /* align-items: center; */
+        box-sizing: border-box;
+    }
+    .tabs-content > .message-container
+    {
+        display: flex;
+        flex-direction: row;    
+        align-items: center;
+        box-sizing: border-box;
+        background-color: #fff;
+    }
+
+    .avatar-holder
+    {
+        padding:1rem;
+        flex-shrink: 1;
+        flex-grow: 0;
+    }
+
+    .avatar-holder > .avatar 
+    {
+        width:3rem;
+        height:3rem;
+        border:1px solid yellow;
+        border-radius: 50%;
+
+        background-image: url('../img/user-avatar.png');
+        background-size: cover;
+        background-position: 50% 50%;
+
+    }
+
+    .message-info-holder
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding:1rem 0;
+        color:white;
+        flex-grow: 1;
+    }
+
+    .message-info-holder > .msg-info 
+    {
+        flex-grow: 1;
+    }
+
+    .msg-info > .name 
+    {
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .msg-info > .last-msg 
+    {
+        font-size: .875rem;
+        color:#a7bbb9;
+        padding:.25rem 0;
+
+    }
+
+    .extra-info-holder 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 0;
+        padding-right: .5rem;
+    }
+
+    .extra-info-holder.active  > .time
+    {
+        color:#25d366;
+
+    }
+
+    .extra-info-holder.active  > .bubble
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#001412;
+        background-color: #25d366;
+        font-size: .875rem;
+        width:1rem;
+        height:1rem;
+        border-radius: 50%;
+        margin:.5rem 0;
+        padding: .25rem;
+    }
+
+    .extra-info-holder > .time 
+    {
+        font-size: .875rem;
+    }
+
+    .extra-info-holder > .bubble 
+    {
+        display: none;
+        font-size: .875rem;
+    
+    }
+    .tabs-content > .status-main
+    {
+        display: none;
+        flex-direction: column;
+        box-sizing: border-box;
+        background-color: #fff;
+    }
+    .status-container
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .user-status
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .user-status > img
+    {
+        width: 70px;
+        height: 70px;
+        padding: .25rem;
+    }
+
+    .Add-status > h4
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #000 ;
+        margin-top: 20px;
+        font-weight: 500;
+    }
+
+    .Add-status > h5
+    {
+        margin-top: -20px;
+        color: #757574;
+        font-weight: lighter;
+    }
+    .status-main > .status-message
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .status-nav
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: centre;
+        border: 3px solid#25d366;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 1rem;
+    }
+
+    .status-nav > img
+    {
+        width: 50px;
+        height: 50px;
+    /* margin-left: 1rem;*/
+    }
+
+    .contact-status
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact-status > h4
+    {
+        margin-left: 1rem;
+        margin-top: 5px;
+        color: #000;
+        font-weight: lighter;
+    }
+
+    .contact-status > h5
+    {
+        margin-left: 1rem;
+        margin-top: -20px;
+        color: #757574;
+        font-weight: lighter;
+    }
+    .tabs-content > .calls-main
+    {
+        display: none;
+        flex-direction: column;
+        box-sizing: border-box;
+        background-color: #fff;
+    }
+    .calls-main > .call-container
+    {
+        padding: 1rem;
+    }
+
+    .Link
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .Link > img
+    {
+        width: 45px;
+        height: 45px;
+    }
+
+    .call-container
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .call-container > .message > h4
+    {
+        color: #000;
+        font-weight: 50;
+        margin-top: 0rem;
+        padding-left: .5rem;
+    }
+
+    .call-container > .message > h5
+    {
+        color: #999693;
+        font-weight: 50;
+        margin-top: -17px;
+        padding-left: .5rem;
+    }
+
+    .call-container > .message > span
+    {
+        color: white;
+        font-weight: 50;
+        margin-left: -45px;
+    }
+
+    .call-list
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .call-data > img
+    {
+        width: 50px;
+        height: 50px;
+        padding-left: .75rem;
+        margin-top: 0rem;
+    }
+
+    #one
+    {
+    color: white;
+    padding-left: .5rem;
+    text-align: center;
+    margin-top: 0%;
+
+    }
+
+    .contact-data   
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: .5rem;
+        margin-top: -68px;
+        color: #000;
+        font-weight: lighter;
+        margin-left: -175px;
+    }
+    .contact-data > h4
+    {
+        font-weight: 300;
+    }
+
+    .ikon
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: centre;
+        
+    }
+
+    #one > img
+    {
+        width:20px;
+        height: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 65px;
+        margin-top: -20px;
+    }
+
+    .ikon > h4
+    {
+        margin-top: -18px;
+        padding-left: .3rem;
+        color: #9c9b9a;
+        font-weight: lighter;
+        font-size: small;
+    }
+
+    .video-icon
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: centre;
+        padding-right: 1rem;
+    }
+
+    .video-icon > img
+    {
+        width: 25px;
+        height: 25px;
+        margin-top: -55px;
+    }
+}
